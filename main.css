@@ -1,0 +1,311 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: "Raleway";
+    margin: 0px;
+    padding: 0px;
+    color: #404e5c;
+}
+
+
+.container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    background-color: rgb(76,76,76);
+    height: 100px;
+  
+}
+
+.logo {
+    padding-left: 3vw;
+    margin-top: 2vh;
+    font-size: 1.8em;
+    color: #dd7596;
+}
+
+@media only screen and (min-width: 480px) {
+    .logo {
+        font-size: 2.5em;
+    }
+
+}
+
+
+.menubar {
+    display: flex;
+    display: none;
+    padding-top: 1.5vh;
+    padding-right: 1.5vw;
+    text-align: center;
+}
+  
+.menubar li {
+    display: inline-block;  
+    background: silver;
+    width: 100px;
+    padding: 0.8rem;
+    cursor: pointer;
+    position: relative;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin: 1px;
+    list-style: none;
+}
+
+.menubar li a {
+    color: black; 
+    text-decoration: none;
+}
+
+.menubar li:hover {
+    background: #cf1259;
+}
+
+.menubar li:hover a {
+    color: white; 
+}
+
+.menubar li ul {
+    display: none;
+    padding: 0;
+    position: absolute;
+    margin-top: 0.8rem;
+    left: 0;
+    z-index: 10;
+}
+
+.menubar li:hover ul {
+    display: block;
+}
+
+.menubar li:hover ul a {
+  color: black; 
+}
+
+.menubar li ul li {
+    background: silver;
+    display: block;
+}
+
+.menubar li ul li a { 
+    white-space: nowrap;
+}
+
+.menubar li ul li:hover {
+    background: #cf1259;
+}
+  
+.menubar li ul li:hover a {
+    color: white;
+}
+
+/* slicknav_menu */
+.slicknav_menu {
+    display: block;
+}  
+
+#mobilemenu {
+    z-index: 100;
+}
+
+@media only screen and (min-width: 672px) {
+    .slicknav_menu {
+        display: none;
+    }
+    
+    .menubar {
+        display: block;
+    }
+
+}
+
+
+.main {
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 4vw;
+}
+
+h2 {
+    margin-bottom: 3vh;
+}
+
+.dove {
+    font-size: xx-large;
+    margin-bottom: 3vh;
+}
+
+.intro {
+    width: 100%;
+    line-height: 24px;
+    margin-top: 2vh;
+}
+
+.article {
+    margin-top: 0px;
+    padding: 2vw;
+}
+
+.approaches {
+    line-height: 30px;
+    text-decoration: underline;
+}
+
+.graphics {
+    max-width: 500px;
+}
+
+.content {
+    width: 100%;
+    margin-top: 2vh;
+    line-height: 24px;
+}
+
+.calendar {
+    width: 85%;
+    height: auto;
+    margin-top: 3vh;
+}
+
+.graphics {
+    width: 100%;
+    height: auto;
+    margin-top: 3vh;
+}
+
+.infotab {
+    padding: 250px;
+}
+
+.icons {
+    font-size: xx-large;
+}
+
+.learn-more {
+    border-style: solid;
+    border-color: #cf1259;
+    font-size: large;
+    padding: 1vh;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    margin: 2vh;
+    margin-top: 4vh;
+    cursor: pointer;
+}
+
+.learn-more a {
+    color: black;
+    text-decoration: none;
+}
+
+.learn-more:hover {
+    background: #cf1259;
+}
+
+.learn-more:hover a {
+    color: white;
+}
+
+.footer {
+    grid-column: 1 / -1;
+    grid-row: 3 / 4;
+    background-color: rgb(76,76,76);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.reference {
+    background-color: #dd7596;
+    border-radius: 7px;
+    padding: 1vw;
+    padding-top: 0;
+    margin: 2vh;
+    font-size: 10px;
+    color: #404e5c;
+}
+
+
+
+form {
+    width: 80vw;
+    background-color: white;
+    border-radius: 10px;
+    padding: 2vh;
+    padding-top: 2px;
+    margin: 5vh;
+}
+
+input {
+    width: 100%;
+    height: 3em;
+    border-style: solid;
+    border-color: #dd7596;
+    box-sizing: border-box;
+}
+
+input:focus {
+    border-width: 3px;
+    border-color: #cf1259;
+}
+
+button {
+    width: 100%;
+    height: 2.4em;
+    background-color: gainsboro;
+    border-style: none;
+    margin-top: 2vh;
+    box-sizing: border-box;
+    font-size: inherit;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #cf1259;
+    color: white;
+}
+
+
+@media only screen and (min-width: 768px) {
+    .intro {
+        width: 45%; 
+        margin-bottom: 3vh;
+        margin-top: 3vh;
+        line-height: 30px;
+        padding-right: 1vw;
+    }
+    
+    .content {
+        width: 25%;
+        line-height: 28px;
+        margin-top: 3vh;
+        padding-right: 1vw;
+    }
+
+
+    form {
+        width: 50vw;
+        background-color: white;
+        border-radius: 10px;
+        padding: 2vh;
+        padding-top: 2px;
+        margin: 5vh;
+    }
+
+}

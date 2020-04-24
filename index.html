@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+    <head>
+        <meta charset="utf-8">
+        <title>MY WEBSITE</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Raleway:400,600" rel="stylesheet" type="text/css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- CDN link to SlickNav CSS  -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/slicknav.min.css">
+<!-- Link to your custom stylesheet -->
+        <link rel="stylesheet" href="main.css">
+<!-- CDN link to jQuery (necessary for SlickNav jQuery to work -->
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<!-- CDN link to SlickNav jQuery -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/jquery.slicknav.min.js"></script>
+        
+        <script>
+            $(document).ready(function () {
+              $(".menubar").slicknav({
+                  prependTo: "#mobilemenu"
+              });
+          });
+      </script>
+    
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="header">
+                <h1 class="logo"><i class="fas fa-spa"></i> M-Talk</h1>
+                <!-- place holder nav-->
+                <nav id="mobilemenu"></nav>
+                <!-- code for the default nav menu goes here -->
+                <nav class="menubar">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">Wellness</a></li>
+                        <li><a href="#">Products</a>
+                            <ul class="dropdown">
+                                <li><a href="#">Innovations</a></li>
+                                <li><a href="#">Ratings</a></li>
+                                <li><a href="#">Funding</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Problems</a>
+                            <ul class="dropdown">
+                                <li><a href="#">Pain</a></li>
+                                <li><a href="#">Irregularity</a></li>
+                                <li><a href="#">Heavy</a></li>
+                                <li><a href="#">Migraine</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                
+               
+            </div>
+            
+            <div class="main">
+                <div class="intro">
+                    <h2>Why we talk about Menstual Cycle?</h2>
+                    <div class="dove"><i class="fas fa-dove"></i></div>
+                    The menstrual cycle is the hormonal process a woman’s body goes through each month to prepare for a possible pregnancy. Every woman goes through it about every month of their lives since puberty, but this normal experience could get abnormal sometimes. Irregular or heavy, painful periods are considered not normal experiences, and these symptoms could indicate potential health concerns of the woman’s body. M-talk is a community where we talk about these concerns and help each other thrive in the area of menstrual health. 
+                    <br><img src="calendar.jpg" alt="Calendar" class="calendar">
+                </div>
+                <div class="content">
+                    <h2>Equity</h2>
+                    Women are affected by the menstrual cycle in many ways that people don’t typically think of. Especially for girls in regions around the world with much less access to resources, period can be a really hard time to get through. Due to the lack of resources, some of them do not have safe hygienic products to contain menstrual blood. The use of unsuitable hygiene products has caused serious health issues for girls in those areas. Click Learn More to read more about why we promote menstrual health equity and how you can be part of the movement.  
+                    <div class="learn-more"><a href="equity.html">LEARN MORE</a></div>
+                </div>
+                <div class="content">
+                    <h2>Mental Health Matters</h2>
+                    Getting moody when your period is coming? You are not alone! Many women struggle with intense mood swings before and during their period. This is primarily due to the changes in hormone level and sometimes the unpleasant symptoms that accompany the period. It’s okay, emotions are not scary! Read on to learn more about how women’s mental health is affected by the menstrual cycle and what are some healthy ways to cope with “moody days”.
+                    <div class="learn-more"><a href="#">LEARN MORE</a></div>
+                </div>
+            </div>
+
+            <div class="footer">
+                <form action="url_to_send_form_data" method="post">
+                    <h4>Connect with us!</h4>
+                    <br/>
+                    <div>
+                        <label for="full_name">full name: </label><br/>
+                        <input type="text" name="fullname" id="full_name" />
+                    </div>
+                    <div>
+                        <label for="email">email: </label><br/>
+                        <input type="email" name="email" id="email" />
+                    </div>
+                    <button class="submit-button" type="submit">submit</button>
+                </form>
+                <div class="reference">
+                    <h4>Image Credit: </h4>
+                    <a href="https://womenslifestyle.com/3-things-you-should-know-about-your-menstrual-health/">https://womenslifestyle.com/3-things-you-should-know-about-your-menstrual-health/</a><br>
+                    <h4>Webdesign Credit: Zexing Chen</h4>
+                    <a href="design_spec.pdf">Design Specs PDF Link</a>
+
+                </div>
+            </div>
+
+        </div>
+    </body>
+
+
+
+
+</html>

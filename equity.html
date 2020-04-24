@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+    <head>
+        <meta charset="utf-8">
+        <title>Menstrual Health Equity</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Raleway:400,600" rel="stylesheet" type="text/css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- CDN link to SlickNav CSS  -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/slicknav.min.css">
+<!-- Link to your custom stylesheet -->
+        <link rel="stylesheet" href="main.css">
+<!-- CDN link to jQuery (necessary for SlickNav jQuery to work -->
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<!-- CDN link to SlickNav jQuery -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/jquery.slicknav.min.js"></script>
+        
+        <script>
+            $(document).ready(function () {
+              $(".menubar").slicknav({
+                  prependTo: "#mobilemenu"
+              });
+          });
+      </script>
+    
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="header">
+                <h1 class="logo"><i class="fas fa-spa"></i> M-Talk</h1>
+                <!-- place holder nav-->
+                <nav id="mobilemenu"></nav>
+                <!-- code for the default nav menu goes here -->
+                <nav class="menubar">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">Wellness</a></li>
+                        <li><a href="#">Products</a>
+                            <ul class="dropdown">
+                                <li><a href="#">Innovations</a></li>
+                                <li><a href="#">Ratings</a></li>
+                                <li><a href="#">Funding</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Problems</a>
+                            <ul class="dropdown">
+                                <li><a href="#">Pain</a></li>
+                                <li><a href="#">Irregularity</a></li>
+                                <li><a href="#">Heavy</a></li>
+                                <li><a href="#">Migraine</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                
+               
+            </div>
+            
+            <div class="main">
+                <div class="article">
+                    <img src="graphics.jpg" alt="Graphics" class="graphics">
+                    <br>
+                    <br>
+                    <div class="dove"><i class="fas fa-dove"></i></div>
+                    <h2>Menstrual Health Programming</h2>
+                    Through menstrual health programming, Plan International USA seeks to ensure that girls and women can confidently and comfortably manage their periods. Each day, more than 800 million women and girls around the world have their periods, yet many face significant barriers to managing their periods safely and easily.  
+                    <br>
+                    <br>
+                    <br>
+                    <h3>Comprehensive Approach</h3>
+                    <div class="approaches">
+                        Creating girl-friendly sanitation facilities
+                        <br>Improving access to sanitary products
+                        <br>Increasing knowledge and skills
+                        <br>Enabling a supportive environment
+                    </div>
+
+                    <div class="learn-more"><a href="https://www.planusa.org/menstrual-health">Click for More about Plan International USA</a></div>
+
+                </div>
+                
+            </div>
+
+            <div class="footer">
+                <form action="url_to_send_form_data" method="post">
+                    <h4>Connect with us!</h4>
+                    <br/>
+                    <div>
+                        <label for="full_name">full name: </label><br/>
+                        <input type="text" name="fullname" id="full_name" />
+                    </div>
+                    <div>
+                        <label for="email">email: </label><br/>
+                        <input type="email" name="email" id="email" />
+                    </div>
+                    <button class="submit-button" type="submit">submit</button>
+                </form>
+                <div class="reference">
+                    <h4>Reference: </h4>
+                    <a href="https://www.planusa.org/menstrual-health">https://www.planusa.org/menstrual-health</a><br>
+                    <h4>Webdesign Credit: Zexing Chen</h4>
+                    <a href="design_spec.pdf">Design Specs PDF Link</a>
+
+                </div>
+            </div>
+
+        </div>
+    </body>
+
+
+
+
+</html>
